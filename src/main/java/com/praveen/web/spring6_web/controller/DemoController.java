@@ -11,8 +11,8 @@ import java.util.Date;
 @Controller
 public class DemoController {
 
-    @GetMapping("/date")
-    public String getDate(Model model) {
+    @GetMapping("/hello")
+    public String sayHello(Model model) {
         model.addAttribute("date", new Date());
         return "helloDate";
     }
